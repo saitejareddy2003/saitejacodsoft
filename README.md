@@ -60,3 +60,43 @@ This provides a simple way for users to generate passwords with varying strength
 
 
 
+This code defines a simple contact book GUI using Tkinter in Python. The application allows users to add, delete, and edit contacts. Here's a breakdown of the code:
+
+Functions:
+
+add_contact(): This function is called when the "Add Contact" button is clicked. It retrieves the name and number from the entry widgets, adds a new contact to the listbox, and clears the entry widgets.
+delete_contact(): This function is called when the "Delete Contact" button is clicked. It deletes the selected contact from the listbox.
+edit_contact(): This function is called when the "Edit Contact" button is clicked. It opens a new window (edit_window) where the user can modify the name and number of the selected contact. After clicking "Save," the modified contact is updated in the listbox.
+Main Window Setup:
+
+The main window is created using tk.Tk() and titled "Contact Book."
+Entry widgets (name_entry and number_entry) are provided for entering contact details.
+Labels, buttons, and a listbox are also added to the main window.
+Add Contact Entry Widgets:
+
+Two entry widgets (name_entry and number_entry) are used to input the name and number of a new contact.
+Buttons:
+
+Three buttons are created:
+"Add Contact" (add_button) triggers the add_contact function.
+"Delete Contact" (delete_button) triggers the delete_contact function.
+"Edit Contact" (edit_button) triggers the edit_contact function.
+Listbox:
+
+A listbox (contact_list) is used to display the list of contacts.
+Edit Contact Window:
+
+When the "Edit Contact" button is clicked, a new window (edit_window) is created.
+Two entry widgets (edit_name_entry and edit_number_entry) are provided for modifying the name and number.
+The "Save" button triggers the save_edit function, which updates the contact in the listbox and closes the edit_window.
+Application Run:
+
+Finally, the application is run with root.mainloop().
+This simple contact book allows users to interactively manage their contacts through an easy-to-use graphical interface.
+
+
+
+
+
+
+
