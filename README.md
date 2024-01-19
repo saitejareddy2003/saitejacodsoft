@@ -25,3 +25,38 @@ To use this calculator, you can click the buttons to input numbers and perform c
 
 Note: The use of eval() in the calculate function can pose security risks if the input is not properly sanitized. For a more secure implementation, consider using a safer approach to evaluate mathematical expression.
 
+
+
+
+
+
+This code defines a simple password generator GUI using Tkinter in Python. Here's a breakdown of the code:
+
+Function:
+
+generate_password(): This function is called when the "Generate Password" button is clicked. It takes the user-defined password length and strength, generates a password accordingly, and displays it in the entry widget.
+Main Window Setup:
+
+The main window is created using tk.Tk() and titled "Password Generator."
+Labels:
+
+Two labels are created to prompt the user for input: one for the password length and one for selecting the password strength.
+Entry Widgets:
+
+An entry widget (length_entry) is used for the user to input the desired password length.
+Another entry widget (password_entry) is used to display the generated password. The show="" argument is used to hide the actual characters in the entry widget.
+Radio Buttons:
+
+Three radio buttons (weak_radio, medium_radio, and strong_radio) are created to allow the user to select the password strength. The options are "Weak," "Medium," and "Strong." The selected strength is stored in the strength_var variable.
+Button:
+
+A button (generate_button) is created to trigger the password generation process. The generate_password function is assigned to its command.
+Application Run:
+
+Finally, the application is run with root.mainloop().
+When the user clicks the "Generate Password" button, the generate_password function is called. It checks the selected strength and generates a password using lowercase letters, a combination of uppercase letters and digits, or a combination of uppercase letters, digits, and punctuation, based on the chosen strength. The generated password is then displayed in the password_entry widget.
+
+This provides a simple way for users to generate passwords with varying strengths based on their preferences.
+
+
+
